@@ -1,12 +1,10 @@
 public class chapter5 {
-  public static void methodA() {
-    System.out.println("methodA");
-    methodB();
-  }
-  public static void methodB() {
-    System.out.println("methodB");
-  }
   public static void main(String[] args) {
-    methodA();
+    add(100,20);
+    add(200, 50);
+  }
+  public static void add(int x, int y) {
+    int ans = x + y;
+    System.out.println(x + "+" + y + "=" + ans);
   }
 }
