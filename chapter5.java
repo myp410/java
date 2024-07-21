@@ -1,10 +1,11 @@
 public class chapter5 {
-  public static void main(String[] args) {
-    add(100,20);
-    add(200, 50);
+  public static void printArray(int[] array) {
+    for (int element : array) {
+      System.out.println(element);
+    }
   }
-  public static void add(int x, int y) {
-    int ans = x + y;
-    System.out.println(x + "+" + y + "=" + ans);
+  public static void main(String[] args) {
+    int[] array = {1, 2, 3};
+    printArray(array);
   }
 }
