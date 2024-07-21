@@ -1,10 +1,10 @@
 public class chapter5 {
-  public static void main(String[] args) {
-    add(100,20);
-    add(200, 50);
-  }
-  public static void add(int x, int y) {
+  public static void int add (int x, int y) {
     int ans = x + y;
-    System.out.println(x + "+" + y + "=" + ans);
+    return ans;
+  }
+  public static void main(String[] args) {
+    int ans = add(100, 10);
+    System.out.println("100 + 10 = " + ans);
   }
 }
