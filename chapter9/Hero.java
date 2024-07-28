@@ -6,7 +6,8 @@ public class Hero {
     System.out.println(this.name + "は攻撃した！");
     System.out.println("的に５ポイントのダメージを与えた！");
   }
-  public Hero() {
+  public Hero(String name) {
     this.hp = 100;
+    this.name = name; 
   }
 }
