@@ -14,5 +14,7 @@ public class Hero {
     System.out.println(this.name + "は転んだ！");
     System.out.println("５のダメージ");
   }
-
+  public Hero() {
+    System.out.println("Heroのコストラクタが作動");
+  }
 }
