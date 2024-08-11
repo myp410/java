@@ -1,13 +1,7 @@
 public class Main {
   public static void main(String[] args) {
-    StringBuilder sb = new StringBuilder();
-    for (int i = 0; i < 10000; i++) {
-      sb.append("Java");
-    }
-    String s = sb.toString();
-    System.out.println(s);
-  }
-  public boolean isValidPlayerName(String name) {
-    return name.matches("[A-Z][A-Z0-9]{7}")
+    long start = System.currentTimeMillis() ;
+    long end = System.currentTimeMillis();
+    System.out.println("処理にかかった時間は" + (end - start) + "ミリ秒でした");
   }
 }  
