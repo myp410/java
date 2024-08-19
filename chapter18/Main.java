@@ -1,14 +1,11 @@
-import java.io.InputStream;
-import java.net.URL;
+import java.sql.*;
 
 public class Main {
   public static void main(String[] args) throws Exception {
-    URL u = new URL("http");
-    InputStrem is = u.openStream();
-    int i = is.read();
-    while (i != -1) {
-      char c = (char)i;
-      System.out.print(c);
-      i = is.read();
-    }
+    Class.forName("org.h2.Driver");
+    String dburl = "jdbc:h2:~/test";
+    String sql = "INSERT INTO EMPROYEE(name) VALUES('aoki')";
+    Connection conn = DriverManager.getConnection(dburl);
+    conn.close();
+  }
 }
